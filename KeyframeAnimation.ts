@@ -6,6 +6,27 @@ export class KeyframeAnimation {
     private static index: number = 0;
     private static animationStyles: HTMLStyleElement[] = [];
 
+    public static pxUnitProperties: string[] = [
+        "width",
+        "height",
+        "top",
+        "left",
+        "bottom",
+        "right",
+        "fontSize",
+        "padding",
+        "margin",
+        "paddingTop",
+        "paddingLeft",
+        "paddingRight",
+        "paddingBottom",
+        "marginTop",
+        "marginLeft",
+        "marginRight",
+        "marginBottom",
+        "gap",
+    ]
+
     public durationInSecond: number = 1;
     public delayInSecond: number = 1;
     public direction: "normal" | "reverse" | "alternate" | "alternate-reverse" = "normal";
@@ -96,26 +117,7 @@ export class KeyframeAnimation {
     }
 
 
-    private static pxUnitProperties: string[] = [
-        "width",
-        "height",
-        "top",
-        "left",
-        "bottom",
-        "right",
-        "fontSize",
-        "padding",
-        "margin",
-        "paddingTop",
-        "paddingLeft",
-        "paddingRight",
-        "paddingBottom",
-        "marginTop",
-        "marginLeft",
-        "marginRight",
-        "marginBottom",
-        "gap",
-    ]
+
 
     private formatCssValue(propName: string, val: any): any {
         if (KeyframeAnimation.pxUnitProperties.indexOf(propName) !== -1) {
