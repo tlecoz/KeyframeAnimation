@@ -49,7 +49,7 @@ the HtmlStyleElement is stored in a private static KeyframeAnimation.animationSt
 
 Usage example in typescript (based on react) : 
 
-
+```
 import { useState } from "react"
 import { KeyframeAnimation } from "./KeyframeAnimation"
 
@@ -88,7 +88,7 @@ export const Test = () => {
         <button onClick={onClick}>CLICK</button>
     </div>
 }
-
+```
 
 
 
